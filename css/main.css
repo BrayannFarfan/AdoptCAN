@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;1,500&display=swap");
+/*=======HEADER NAV BAR========== */
+html {
+  scroll-behavior: smooth;
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header a {
+  color: aliceblue;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.carousel-caption {
+  padding-bottom: 200px !important;
+}
+.carousel-caption h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.carousel-indicators .active {
+  background-color: rgb(17, 108, 245) !important;
+}
+.container-carousel {
+  width: 100%;
+  height: 100%;
+}
+.readmore {
+  padding: 15px;
+  text-decoration: none;
+  background-color: rgb(17, 108, 245);
+  color: #fff;
+  border-radius: 5px;
+}
+.marathon {
+  color: rgb(17, 108, 245);
+  transition: 0.5s;
+}
+.readmore:hover {
+  background-color: rgb(8, 51, 116);
+  transition: 0.5s;
+  color: #fff;
+}
+.navbar {
+  box-shadow: 0px 2px 4px -1px rgba(171, 171, 171, 0.75);
+  position: sticky;
+  top: 0px;
+}
+.navbar-brand {
+  font-weight: 600;
+  color: #d60606;
+}
+.navbar-brand:hover {
+  color: #d60606;
+}
+.adopt {
+  animation-delay: 1s;
+}
+
+.nav-links {
+  color: #333;
+  font-weight: 500;
+}
+.nav-links.active {
+  color: #d60606;
+}
+.nav-links:hover {
+  color: #d60606;
+}
+
+/* ============SECTION WHY ADOPTIONS=============== */
+.container-adotions,
+.container-testimony {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+.container-adotions h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb(87, 87, 87);
+}
+.adption-content {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+.adption-content .adoption-items {
+  padding: 15px;
+  width: 250px;
+  margin-top: 2rem;
+}
+.adoption-icon {
+  color: rgb(17, 108, 245);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.adoption-items h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-top: 1.2rem;
+}
+.adoption-description {
+  font-size: 12px;
+}
+.adoption-button {
+  padding: 15px;
+  text-decoration: none;
+  background-color: rgb(17, 108, 245);
+  color: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 7rem;
+  margin-left: 20rem;
+}
+.adoption-button:hover {
+  color: #fff;
+}
+
+/*============SECTION TESTIMONYS===================*/
+.container-testimony h2 {
+  text-align: center;
+  margin-top: 9rem;
+}
+
+/*=========MEDIA QUIERIES====*/
+@media (max-width: 1060px) {
+  .carousel-caption {
+    margin-bottom: -150px;
+  }
+  .carousel-caption h2 {
+    color: chartreuse !important;
+  }
+}
+@media (max-width: 700px) {
+  .carousel-caption h2 {
+    display: none;
+  }
+}
