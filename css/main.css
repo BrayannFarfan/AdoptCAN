@@ -143,18 +143,20 @@ header.abajo ul li a:hover {
 /* ============SECTION WHY ADOPTIONS=============== */
 .container-adotions,
 .container-testimony {
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
   margin-top: 4rem;
 }
 .container-adotions h1 {
   text-align: center;
   font-size: 2rem;
-  font-weight: 400;
-  color: rgb(87, 87, 87);
+  color: #434343;
 }
 .adption-content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 3rem;
   margin-top: 2rem;
 }
@@ -175,77 +177,272 @@ header.abajo ul li a:hover {
   margin-top: 1.2rem;
 }
 .adoption-description {
-  font-size: 12px;
+  font-size: 0.8rem;
 }
 .adoption-button {
   padding: 10px 30px;
   text-decoration: none;
-  background-color: #950101;
-  color: #fff;
+  color: #950101;
   border-radius: 5px;
   display: inline-block;
   margin-top: 7rem;
-  margin-left: 20rem;
+  cursor: pointer;
+  margin-left: 28rem;
+  border: 1px solid #950101;
+  transition: all 1s;
 }
 .adoption-button:hover {
+  background-color: #950101;
   color: #fff;
 }
-
-/*============SECTION TESTIMONYS===================*/
-.container-testimony h2 {
+/*=========SECTION BANNER==========*/
+.testimonials {
+  padding: 40px 0;
+  background: #f1f1f1;
+  color: #434343;
   text-align: center;
-  margin-top: 9rem;
+  font-weight: 400;
+}
+.inner {
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+.inner h4 {
+  font-size: 2rem;
+}
+.border {
+  width: 160px;
+  height: 5px;
+  background: #950101;
+  margin: 26px auto;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col {
+  flex: 33%;
+  max-width: 33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial {
+  background: #fff;
+  padding: 30px;
+}
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.stars {
+  color: #950101;
+  margin-bottom: 20px;
+}
+.description {
+  font-size: 0.8rem;
+}
 /*========SECTION CONTACT===============*/
-.i-header {
-  box-shadow: 0px 2px 4px -1px rgba(171, 171, 171, 0.75);
+
+.container-contact {
+  background-image: url(../images/back3.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  height: 200vh;
+}
+.formulario form {
   background-color: #fff;
-  z-index: 1000;
+  padding: 25px;
 }
-.i-header nav ul li a {
-  color: #333;
+.formulario form .btn {
+  background-color: #950101;
+  color: #fff;
 }
-.i-header .logo {
+.formulario input {
+  border: 1px solid rgb(126, 126, 126);
+}
+.formulario textarea {
+  border: 1px solid rgb(126, 126, 126);
+}
+/*===============SECTION SSERVICES=======*/
+.back {
+  background-image: url(../images/back.jpg);
+  height: 100vh;
+}
+.back .service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+}
+.back .service h1 {
+  color: #fff;
+  font-size: 5rem;
+}
+.back .service p {
+  text-align: center;
+  color: #fff;
+  font-size: 1rem;
+}
+.fa-sort-down {
+  color: #fff;
+}
+.conatiner-down {
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+.conatiner-down a {
+  padding: 0 15px 10px;
+  background-color: #660505;
+}
+#courses {
+  width: 90%;
+  margin: 0 auto;
+  padding: 6rem;
+}
+#courses h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 7rem;
+}
+.conatiner-courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 7rem;
+  gap: 3rem;
+}
+.conatiner-courses article i {
+  font-size: 3rem;
   color: #950101;
 }
 
-/*=========SECTION BANNER==========*/
+.conatiner-courses article {
+  margin: auto;
+  background-color: #e2e2e2;
+  cursor: pointer;
 
-.container-testimony {
-  background-image: url(../images/back2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: 100vh;
-  width: 100%;
-  z-index: 10000;
-  margin-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.container-testimony .container-banner {
-  background: chartreuse;
-  width: 50%;
-  height: 50vh;
+.testimonial .fa-paw {
+  font-size: 2rem;
 }
-
-/*===============SECTION SSERVICES=======*/
-
-.container-services {
+/*=====================FOOTER================================*/
+.site-footer {
   background-color: #950101;
-  height: 100vh;
+  padding: 45px 0 20px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #fff;
+}
+.site-footer hr {
+  border-top-color: #bbb;
+  opacity: 0.5;
+}
+.site-footer hr.small {
+  margin: 20px 0;
+}
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+.site-footer a {
+  color: #fff;
+}
+.site-footer a:hover {
+  text-decoration: none;
+}
+.footer-links {
+  padding-left: 0;
+  list-style: none;
+}
+.footer-links li {
+  display: block;
+}
+.footer-links a {
+  color: #fff;
+}
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+  text-decoration: none;
+}
+.footer-links.inline li {
+  display: inline-block;
+}
+.site-footer .social-icons {
+  text-align: right;
+}
+.site-footer .social-icons a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #fff;
+}
+.copyright-text {
+  margin: 0;
 }
 
 /*=========MEDIA QUIERIES====*/
-@media (max-width: 1060px) {
+@media (max-width: 960px) {
   .carousel-caption {
     margin-bottom: -150px;
   }
   .carousel-caption h2 {
-    color: chartreuse !important;
+    display: none;
+  }
+  .adoption-button {
+    margin-left: 18rem;
+  }
+  .site-footer [class^="col-"] {
+    margin-bottom: 30px;
+  }
+  .col {
+    flex: 100%;
+    max-width: 80%;
   }
 }
 @media (max-width: 700px) {
   .carousel-caption h2 {
     display: none;
+  }
+
+  .social-icons li.title {
+    display: block;
+    margin-right: 0;
+    font-weight: 600;
+  }
+  .col {
+    flex: 100%;
+    max-width: 100%;
+  }
+  .sidebar {
+    display: none;
+  }
+  .adoption-button {
+    margin-left: 5rem;
   }
 }
