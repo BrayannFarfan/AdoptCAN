@@ -446,6 +446,7 @@ header.abajo ul li a:hover {
   }
   nav ul li {
     padding: 1.8rem;
+    margin-top: -1rem;
   }
   nav ul li a {
     color: #333;
