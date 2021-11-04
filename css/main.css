@@ -23,6 +23,9 @@ header {
   color: #fff;
   visibility: hidden;
 }
+.nav-toggle {
+  display: none;
+}
 header.abajo {
   background: #fff;
   padding: 15px 20px;
@@ -433,19 +436,40 @@ header.abajo ul li a:hover {
     width: 100%;
   }
   nav ul {
-    display: none;
+    margin-left: -110%;
     flex-direction: column;
     width: 100%;
     height: 50vh;
-    background-color: #333;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    transition: all 1s;
   }
   nav ul li {
-    padding: 2rem;
+    padding: 1.8rem;
+  }
+  nav ul li a {
+    color: #333;
   }
 
   header .logo {
     text-align: center;
     margin-top: -1rem;
+  }
+  .fa-bars {
+    visibility: visible;
+    margin-top: -1.5rem;
+    font-size: 1.5rem;
+  }
+  .nav-toggle {
+    outline: none;
+    border: none;
+    background: none;
+    position: fixed;
+    display: block;
+  }
+  .nav-menu_visible {
+    margin-left: 0;
+    transition: all 1s;
   }
 }
 @media (max-width: 700px) {
@@ -483,5 +507,27 @@ header.abajo ul li a:hover {
     visibility: visible;
     margin-top: -1.5rem;
     font-size: 1.5rem;
+  }
+  .nav-toggle {
+    outline: none;
+    border: none;
+    background: none;
+    position: fixed;
+  }
+  header.abajo .fa-bars {
+    color: #333;
+  }
+  header.abajo {
+    background: #fff;
+    height: 50px;
+    padding: 15px 20px;
+    box-shadow: 0px 2px 4px -1px rgba(171, 171, 171, 0.75);
+  }
+  .container-adotions h1 {
+    font-size: 1.5rem;
+  }
+  .back .service h1 {
+    font-size: 2rem;
+    text-align: center;
   }
 }
