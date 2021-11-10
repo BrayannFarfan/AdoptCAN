@@ -3,6 +3,19 @@
 html {
   scroll-behavior: smooth;
 }
+.rojo {
+  color: #950101;
+}
+.popup-class {
+  border-radius: 5px;
+}
+body {
+  background: #fff;
+  transition: 0.3s ease all;
+}
+body.dark {
+  background: #333;
+}
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -26,6 +39,9 @@ header {
 .nav-toggle {
   display: none;
 }
+body.dark header.abajo {
+  background: #333;
+}
 header.abajo {
   background: #fff;
   padding: 15px 20px;
@@ -39,6 +55,7 @@ header .logo {
   transition: 1.5s;
   text-decoration: none;
 }
+
 nav {
   display: flex;
   width: 80%;
@@ -67,8 +84,14 @@ header ul li a {
   font-weight: 600;
   transition: 0.7s;
 }
+body.dark header.abajo ul li a {
+  color: #fff;
+}
 header.abajo .logo {
   color: #950101;
+}
+body.dark header.abajo .logo {
+  color: #fff;
 }
 header.abajo ul li a {
   color: #333;
@@ -89,6 +112,9 @@ header.abajo ul li a:hover {
 .carousel-indicators .active {
   background-color: #950101 !important;
 }
+body.dark .carousel-indicators .active {
+  background-color: #333 !important;
+}
 .container-carousel {
   width: 100%;
   height: 100%;
@@ -100,15 +126,22 @@ header.abajo ul li a:hover {
   color: #fff;
   border-radius: 5px;
 }
+body.dark .readmore {
+  background-color: #333;
+}
 .marathon {
   color: #950101;
   transition: 0.5s;
+}
+body.dark .marathon {
+  color: #333;
 }
 .readmore:hover {
   background-color: #660505;
   transition: 0.5s;
   color: #fff;
 }
+
 .adopt {
   animation-delay: 1s;
 }
@@ -147,6 +180,62 @@ header.abajo ul li a:hover {
 .fa-youtube-square {
   background: #e70303;
 }
+body.dark .fa-facebook-square {
+  background: #333;
+  border: 1px solid #fff;
+}
+body.dark .fa-twitter-square {
+  background: #333;
+  border: 1px solid #fff;
+}
+body.dark .fa-whatsapp-square {
+  background: #333;
+  border: 1px solid #fff;
+}
+body.dark .fa-youtube-square {
+  background: #333;
+  border: 1px solid #fff;
+}
+
+.switch {
+  background: #262627;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+  background: rgb(255, 115, 0);
+  color: #000;
+}
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: none;
+  display: block;
+  color: #fff;
+}
 /* ============SECTION WHY ADOPTIONS=============== */
 .container-adotions,
 .container-testimony {
@@ -158,6 +247,9 @@ header.abajo ul li a:hover {
   text-align: center;
   font-size: 2rem;
   color: #434343;
+}
+body.dark .container-adotions h1 {
+  color: #fff;
 }
 .adption-content {
   display: flex;
@@ -186,6 +278,15 @@ header.abajo ul li a:hover {
 .adoption-description {
   font-size: 0.8rem;
 }
+body.dark .adoption-description {
+  color: #fff;
+}
+body.dark .adoption-title {
+  color: #fff;
+}
+body.dark .adoption-icon {
+  color: #fff;
+}
 .adoption-button {
   padding: 10px 30px;
   text-decoration: none;
@@ -198,14 +299,21 @@ header.abajo ul li a:hover {
   border: 1px solid #950101;
   transition: all 1s;
 }
+body.dark .adoption-button {
+  color: #fff;
+  border: 1px solid #fff;
+}
 .adoption-button:hover {
   background-color: #950101;
   color: #fff;
 }
+body.dark .adoption-button:hover {
+  background-color: rgb(29, 29, 29);
+}
 /*=========SECTION BANNER==========*/
 .testimonials {
   padding: 40px 0;
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
   color: #434343;
   text-align: center;
   font-weight: 400;
@@ -219,11 +327,17 @@ header.abajo ul li a:hover {
 .inner h4 {
   font-size: 2rem;
 }
+body.dark .inner h4 {
+  color: #fff;
+}
 .border {
   width: 160px;
   height: 5px;
   background: #950101;
   margin: 26px auto;
+}
+body.dark .border {
+  background: #333;
 }
 
 .row {
@@ -241,6 +355,10 @@ header.abajo ul li a:hover {
   background: #fff;
   padding: 30px;
 }
+body.dark .testimonial {
+  background: #333;
+  box-shadow: 1px 1px 5px 0px rgba(181, 181, 181, 0.75);
+}
 .testimonial img {
   width: 100px;
   height: 100px;
@@ -252,9 +370,18 @@ header.abajo ul li a:hover {
   text-transform: uppercase;
   margin: 20px 0;
 }
+body.dark .name {
+  color: #fff;
+}
+body.dark .description {
+  color: #fff;
+}
 .stars {
   color: #950101;
   margin-bottom: 20px;
+}
+body.dark .stars {
+  color: #fff;
 }
 .description {
   font-size: 0.8rem;
@@ -268,12 +395,39 @@ header.abajo ul li a:hover {
   background-size: cover;
   height: 200vh;
 }
+.formualrio-title {
+  color: #fff;
+  transition: all 0.3s;
+}
 .formulario form {
   background-color: #fff;
   padding: 25px;
+  transition: all 0.3s;
+}
+body.dark .formulario .formualrio-title {
+  color: #333;
+  transition: all 0.3s;
+}
+body.dark .formulario form {
+  background-color: #333;
+  transition: all 0.3s;
+}
+body.dark .formulario .form-label {
+  color: #fff;
+}
+body.dark .formulario form label {
+  color: #fff;
 }
 .formulario form .btn {
   background-color: #950101;
+  color: #fff;
+}
+body.dark form .btn {
+  background-color: #333;
+  border: 1px solid #fff;
+  transition: all 0.3s;
+}
+body.dark .connected {
   color: #fff;
 }
 .formulario input {
@@ -318,6 +472,9 @@ header.abajo ul li a:hover {
   padding: 0 15px 10px;
   background-color: #660505;
 }
+body.dark .conatiner-down a {
+  background-color: #333;
+}
 #courses {
   width: 90%;
   margin: 0 auto;
@@ -352,6 +509,7 @@ header.abajo ul li a:hover {
 .testimonial .fa-paw {
   font-size: 2rem;
 }
+
 /*=====================FOOTER================================*/
 .site-footer {
   background-color: #950101;
@@ -359,6 +517,10 @@ header.abajo ul li a:hover {
   font-size: 15px;
   line-height: 24px;
   color: #fff;
+}
+body.dark .site-footer {
+  background: #333;
+  box-shadow: 1px 1px 5px 0px rgba(181, 181, 181, 0.75);
 }
 .site-footer hr {
   border-top-color: #bbb;
